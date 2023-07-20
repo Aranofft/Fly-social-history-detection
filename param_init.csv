@@ -1,0 +1,63 @@
+﻿Param,Enabled,Description,Sig
+'a_mm',0," Quarter major axis length (mm). This feature was not used for mice. Transformation: none, abs. ",
+absanglefrom1to2_nose2ell',0,Absolute diﬀerence between direction to closest animal based on dnose2ell and current animal’s orientation (rad). Transformations: none. ,
+'absdtheta',0, Angular speed (rad/s) |dtheta|. Transformations: relative. ,
+'absdv_cor',0, Sideways speed of the animal’s center of rotation (deﬁned by corfrac maj and corfrac min) (mm/s). Transformations: relative.,
+'absphidiff_anglesub',0, Absolute diﬀerence in velocity direction between current animal and closest animal based on anglesub (rad). Transformations: none. ,
+'absphidiff_nose2ell',0, Absolute diﬀerence in velocity direction between current animal and closest animal based on dnose2ell (rad) . Transformations: none. ,
+'absthetadiff_anglesub',0, Absolute diﬀerence in orientation between current animal and closest animal based on anglesub (rad). Transformations: none. ,
+'absthetadiff_nose2ell',0,Absolute diﬀerence in orientation between this animal and closest animal based on dnose2ell (rad). Transformations: none. ,
+'angle2wall',0,"Angle to closest point on the arena wall from animal’s center, relative to the animal’s orientation (rad). Transformations: ﬂip,abs. ",
+'anglefrom1to2_anglesub',0,"Angle to closest (based on angle subtended) animal’s centroid in current animal’s coordinate system. Metric that encodes the position of the closest animal relative to the current animal. Transformations: ﬂip, abs. ",
+'anglefrom1to2_nose2ell',0,"Angle to closest (based on distance from nose to ellipse) animal’s centroid in current animal’s coordinate system. Metric that encodes the position of the closest animal relative to the current animal. Transformations: ﬂip, abs. ",
+'angleonclosestfly',0," Angle of the current animal’s centroid in the closest (based on distance from nose to ellipse) animal’s coordinate system. Metric that encodes the position of the closest animal relative to the current animal. Transformations: ﬂip, abs.",Sig
+'anglesub',0," Maximum total angle of animal’s ﬁeld of view (fov) occluded by another animal (rad). The parameter fov that can be set, and for our classiﬁer’s we set it to π radians. Transformations: none. ",
+'area',0," Area of the ellipse (mm2). Transformations: none, relative. ",
+'arena_angle',0, Animal’s angular position in the arena measured as angle from x-axis. Transformations: none. ,
+'arena_r',0, Distance of animal’s center from arena’s center. Transformations: none. ,
+'b_mm',0," Quarter minor axis length (mm). Transformations: none, abs. ",
+'closestfly_anglesub',0,"Identity of closest animal, based on anglesub, which is the total angle of animal’s ﬁeld of view (for) occluded by the other animal (rad). The parameter fov that can be set, and for our classiﬁer’s we set it to π radians.. Transformations: none. ",
+'closestfly_center',0," Identity of closest animal, based on dcenter. Transformations: none. ",
+'closestfly_ell2nose',0," Identity of closest animal, based on dell2nose. Transformations: none. ",
+'closestfly_nose2ell',0," Identity of closest animal, based on dnose2ell. Transformations: none.",
+'corfrac_maj',0,"Projection of the center of rotation on the animal’s major axis (no units). This is a measure of the point on the animal that translates least from one frame to the next. It is 0 at the center of the animal, 1 at the forward tip of the major axis, and -1 and the backward tip of the major axis. Transformations: none, abs.",
+'corfrac_min',0," Projection of the center of rotation on the animal’s minor axis (no units). This is a measure of the point on the animal that translates least from one frame to the next. It is 0 at the center of the animal, 1 at the right tip of the minor axis, and -1 and the backward tip of the minor axis. Transformations: ﬂip, abs. ",
+'dangle2wall',0," Change in the angle to closest point on the arena wall to animal’s center, relative to the animal’s orientation (rad). Transformations: ﬂip, abs.",
+'danglesub',0,"Change in maximum total angle of animal’s view occluded by another animal (rad/s). Transformations: none, abs. ",
+'darea',0," Change in area from frame t to t+1 (mm/s). Transformations: none, abs. ",
+'da',0,"Change in quarter major axis length from frame t to t+1 (mm/s). Transformations: none, abs. ",
+'db',0," Change in quarter minor axis length from frame t to t+1 (mm/s). Transformations: none, abs.",
+'dcenter',0," Minimum distance from this animal’s center to other animal’s center. Transformations: none, relative. ",
+'ddcenter',1,"Change in minimum distance between this animal’s center and other ﬂies’ centers (mm/s). Transformations: none, abs. ",
+'ddist2wall',1, Change in the distance to arena wall (mm/s). Transformations: none.,
+'decc',0,"Change in the eccentricity of the ellipse from frame t to t+1 (1/s). Transformations: none, abs. ",
+'dell2nose',0," Minimum distance from any point of this animal’s ellipse to the nose of other ﬂies. Transformations: none, relative. ",
+'dnose2ell_angle_30tomin30',0,Minimum distance from this animal’s nose to the ellipse of other ﬂies. The distance to ﬂies that lie within the cone of −30◦ to 30◦ are multplied by a factor greater than 1 dependent on the angle. This feature is used to ﬁnd distance to ﬂies that are close but not infront of the animal. Transformations: none. ,
+'dnose2ell_angle_min20to20',0,Minimum distance from this animal’s nose to the ellipse of other ﬂies. The distance to ﬂies that lie outside the −20◦ to 20◦ cone in front of the animal are multplied by a factor greater than 1 depending on the angle. This feature is used to ﬁnd distance to ﬂies that are close and infront of the animal. Transformations: none. ,
+'dnose2ell_angle_min30to30',0,Minimum distance from this animal’s nose to the ellipse of other ﬂies. The distance to ﬂies that lie outside the −30◦ to 30◦ cone in front of the animal are multplied by a factor greater than 1 depending on the angle. This feature is used to ﬁnd distance to ﬂies that are close and infront of the animal. Transformations: none. ,
+'dist2wall',1,"Distance to the arena wall from the animal’s center (mm). Transformations: none, relative.",
+'dnose2ell',0,"Minimum distance from any point of this animal’s nose to the ellipse of other ﬂies. Transformations: none, relative. ",
+'dnose2tail',0," Minimum distance from any point of this animal’s nose to the tail of other ﬂies. Transformations: none, relative. ",
+'dphi',0,"Change in the velocity direction (rad/s). Transformations: none, abs. ",std
+'dtheta',0,"Angular velocity (rad/s). Transformations: ﬂip, abs. ",std
+'du_cor',0," Sideways velocity of the animal’s center of rotation (mm/s). This is the projection of the change in the position of the center of rotation on the animal onto the direction orthogonal to the animal’s orientation. Transformations: none, abs and relative. ","avg,std"
+'du_ctr',0,"Forward velocity of the animal’s center (mm/s). This is the projection of the animal’s velocity on its orientation direction. Transformations: none, abs and relative. ","avg,std"
+'du_tail',0," Forward velocity of the backmost point on the animal (mm/s). Transformations: none, abs and relative. ",
+'dv_cor',0, Sideways velocity of the animal’s center of rotation (mm/s). This is the projection of the change in the position of the center of rotation on the animal onto the direction orthogonal to the animal’s orientation. Transformations: ﬂip and abs. ,
+'dv_ctr',0,Sideways velocity of the animal’s center (mm/s). This is the projection of the animal’s velocity on the direction orthogonal to the orientation. Transformations: ﬂip and abs. ,
+'dv_tail',0,Sideways velocity of the backmost point on the animal (mm/s). Transformations: ﬂip and abs. ,
+'ecc',0," Eccentricity of the ellipse (no units). Transformations: none, abs.",
+'flipdv_cor',0," Sideways velocity of the animal’s center of rotation, sign-normalized so that if the animal’s orientation is turning right, then ﬂipdv cor is positive if the animal’s center of rotation is also translating to the right (dv cor × signdtheta) (mm/s). Transformations: relative. ",
+'magveldiff_anglesub',0," Magnitude of diﬀerence in velocity of this animal and velocity of closest animal based on anglesub (mm/s). Transformations: none, relative. ",avg
+'magveldiff_nose2ell',0,"Magnitude of diﬀerence in velocity of this animal and velocity of closest animal based on dnose2ell (mm/s). Transformations: none, relative.",avg
+'nflies_close',1, Number of ﬂies within 2 body lengths (4a). Transformations: none. ,
+'phi',0,Velocity direction (rad). Transformations: none.,
+'phisideways',0,Diﬀerence between velocity direction and the animal’s orientation. Transformations: none.,
+'velmag',1, Speed of the center of rotation (mm/s). Transformations: none and relative ,avg
+'velmag_ctr',0, Speed of the ﬁtted ellipse’s center(mm/s). Transformations: none and relative. ,avg
+'velmag_nose',0, Speed of the animal’s nose (mm/s). Transformations: none and relative. ,avg
+'velmag_tail',0,Speed of the animal’s tail (mm/s). Transformations: none and relative. ,avg
+'veltoward_anglesub',0,"Velocity of this animal in the direction towards the closest animal (closest animal being deﬁned based on anglesub) (mm/s). Transformations: none, relative. ",avg
+'veltoward_nose2ell',1," Velocity of this animal in the direction towards the closest animal (closest animal being deﬁned based on dnose2ell) (mm/s). Transformations: none, relative.",
+'yaw',1, Diﬀerence between velocity direction and orientation (rad). Transformations: ﬂip and abs.,std
+absyaw',0,Absolute difference between velocity direction and orientation (rad),
